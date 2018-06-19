@@ -8,7 +8,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html> 
 
-<head>
+<head>   
 <title>后台登陆</title>
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/libs/layui/css/layui.css" />
