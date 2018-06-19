@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mvcConfig SYSTEM "mvc-config.dtd" >
+<mvcConfig>
+	
+	<!-- 什么什么.do的都对应了一个Action -->
+	
+  <actionMapping>
+  	<!-- common部分开始 -->
+  	<!-- 准备登陆的时候去PrepareLoginAction类里面去找用户类型 -->
+  	<action name="common/prepareLogin.do" class="com.luas.tms.action.common.PrepareLoginAction"></action>
+  	<action name="common/login.do" class="com.luas.tms.action.common.LoginAction"></action>
+  
+  	<action name="common/loginOut.do" class="com.luas.tms.action.common.LoginOut"></action> 
+  	
+  	<!-- 省 开始 -->
+  	<action name="province/provinceShowBaseInfo.do" class="com.luas.tms.action.province.ProvinceShowBaseInfoAction"></action>
+  	
+  	<!-- 修改省的基本信息 -->
+  	<action name="province/findProvinceBaseInfo.do" class="com.luas.tms.action.province.UpdataprovinceBaseInfo"></action>
+  	<action name="province/updateProvinceBaseInfo.do" class="com.luas.tms.action.province.UpdateprovinceInfo"></action>
+  	<!-- 修改省的基本信息 -->
+  	<!--添加市局信息开始-->
+  	<action name="province/addcityinfo.do" class="com.luas.tms.action.province.AddcityInfoAction"></action>
+  	<!--添加市局信息结束-->
+  	<!-- 省 结束 --> 
+  	<!-- 修改密码 -->
+  	<action name="common/changePassword.do" class="com.luas.tms.action.common.UpdataProvincePassword"></action>
+  	<!-- 修改密码结束 -->
+  
+  	<!-- 市开始 -->
+  	<action name="city/cityShowBaseInfo.do" class="com.luas.tms.action.city.CityShowBaseInfoAction"></action>
+  	<action name="city/findcityBaseInfo.do" class="com.luas.tms.action.city.FindCityBaseInfoAction"></action>
+  	<action name="city/updatecitybaseinfo.do" class="com.luas.tms.action.city.UpdatecitybaseinfoAction"></action>
+  	<action name="city/cityBaseInfo2.do" class="com.luas.tms.action.city.ShowAction"></action>
+  	
+  	
+  	
+  	<!--添加县区信息-->
+  	<action name="city/addcountyinfoAndschoolcinfo.do" class="com.luas.tms.action.city.AddCountyInfoAndSchoolInfoAction"></action>
+ 	<action name="area/areaShowBaseInfo.do" class="com.luas.tms.action.area.AreaBaseInfoAction"></action>
+ 	<!-- 添加县区信息 -->
+  	<!-- 市结束 -->
+  	
+  	
+  	<!-- 学校开始 -->
+  	<action name="school/schoolShowBaseInfo.do" class="com.luas.tms.action.school.showSchoolBaseInfoAction"></action>
+  	<action name="school/showSchoolBaseInfo.do" class="com.luas.tms.action.teacher.ShowBaseInfoAction2"></action>
+  	<action name="school/addSchoolAccount.do" class="com.luas.tms.action.school.AddTeacherAccountAction2"></action>
+  	<action name="school/addTeacherAccount1.do" class="com.luas.tms.action.school.AddTeacherAccountAction1"></action>
+  	<action name="school/updateTeacherBaseInfo.do" class="com.luas.tms.action.school.UpdateTeacherBaseInfoAction"></action>
+  	<!-- 学校结束 -->
+  	
+  	<!-- 教师开始 -->
+  	<action name="teacher/teacherShowBaseInfo.do" class="com.luas.tms.action.teacher.SchoolBaseInfoAction"></action>
+  	<action name="teacher/showTeacherBaseInfo.do" class="com.luas.tms.action.teacher.showSchoolBaseInfoAction"></action>
+  	<action name="teacher/addTeacherAccount.do" class="com.luas.tms.action.school.AddTeacherAccountAction"></action>
+  	<action name="teacher/showBaseInfo.do" class="com.luas.tms.action.area.showBaseInfoAction"></action>
+  	<action name="teacher/showBaseInfo1.do" class="com.luas.tms.action.teacher.showBaseInfoAction1"></action>
+  	<action name="teacher/showBaseInfo2.do" class="com.luas.tms.action.teacher.ShowBaseInfoAction2"></action>
+  	<action name="teacher/shenhe.do" class="com.luas.tms.action.teacher.Showshenheaction"></action>
+  	<!-- 教师结束结束 -->
+  </actionMapping>
+  
+</mvcConfig>

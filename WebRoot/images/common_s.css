@@ -1,0 +1,17 @@
+@charset "utf-8";
+.font_title14_strong{ font-size:14px; font-weight:bold;}
+.font_title14_strong_height{ height: 60px; line-height: 60px;}
+.font_title14_strong_red{ font-size:14px; font-weight:bold; color:#FF0000;}
+.font_right_12{text-align:right; font-family:'宋体';}
+.index_table_logo{ width:420px; border:none; text-align:center;}
+.index_form_table_logo{ width:500px; border:none; text-align:center;}
+.index_form_text_key{width:400px; height:32px; padding:0px; font-size:14px; line-height:28px;}
+.index_nav_table{ width:800px; border:1px solid #B8CBDD;}
+.index_nav_table_header{ height:28px; background-image:url(th_bg.png); background-repeat:repeat-x;}
+.font12_gray_lineheight22{ font-size:12px; color:#666; line-height:22px;}
+.font12_gray_lineheight22_strong { font-weight:bold;}
+.image_border{ border:1px solid #666; }
+.serch_reslut_table{ width:100%; background-repeat:repeat-x; }
+.serch_reslut_table_border{border-bottom:1px solid #B8CBDD;}
+.serch_reslut_table_top{ background-image:url(search_result_bg_top.png); }
+.serch_reslut_table_bottom{ background-image:url(search_result_bg_bottom.png); }

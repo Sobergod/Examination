@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT mvcConfig (actionMapping) >
+<!ELEMENT actionMapping (action*) >
+<!ELEMENT action (#PCDATA)>
+<!ATTLIST action name CDATA #REQUIRED>
+<!ATTLIST action class CDATA #REQUIRED>
+<!ATTLIST action method CDATA #IMPLIED>

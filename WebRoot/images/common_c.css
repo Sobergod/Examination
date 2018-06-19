@@ -1,0 +1,7 @@
+@charset "utf-8";
+.submit-all{border: none;background-image: url(btn_submit.png);width: 148px;height: 36px;}
+.audit-pass{border: none;background-image: url(btn_passed.png);width: 148px;height: 36px;}
+.audit-nopass{border: none;background-image: url(btn_unpassed.png);width: 148px;height: 36px;}
+.audit-save{border: none;background-image: url(btn_submit1.png);width: 148px;height: 36px;}
+
+.error-tip{color: red;}

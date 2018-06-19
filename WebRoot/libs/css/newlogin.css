@@ -1,0 +1,52 @@
+body {
+    background: #eee;
+}
+.container {
+    padding-top: 200px;
+    height: 500px;
+}
+
+.bg-wrap,
+.login-wrap {
+    float: left;
+}
+.wrap {
+    margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+    /* overflow: hidden; */
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #cccccc;
+}
+.bg-wrap {
+    margin-right: 50px;
+    width: 500px;
+    height: 500px;
+    background-image: url(../img/bg.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.login-wrap {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.title {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+.title p {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}

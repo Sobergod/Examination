@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url("common_s.css");
+@import url("common_c.css");
+
+div,ul,ol,form {margin:0;padding:0;}
+img {border:0;}
+li {list-style:none;}
+table {font-size:12px; margin:0; padding:0;}
+th{ background-image:url(th_bg.png); background-repeat:repeat-x; height:28px;}
+input {font-family:tahoma,Arial,Helvetica,sans-serif;font-size:12px;vertical-align:middle;}
+h1,h2,h3,h4,h5,h6 {margin:0;padding:0;text-align:left;font-size:12px;font-weight:400;}
+p {margin:0;}
+body {color: #273C51;text-align: center;margin:0;font-size: 12px;height:100%;width:100%;	line-height: 150%;word-break:break-all;background-color: #E3EFFD;}
+
+.line1{ color:#CCCCCC; height:1px;}
+
+a:link{text-decoration:none;color:#666;}
+a:visited {text-decoration:none;color:#666;}
+a:hover {text-decoration:none;color:#000000;}
+
+.right_body{ background-image:url(body_bg.png); background-repeat:repeat-x; }
+.right_top{ position:fixed; height:27px; width:100%; border:0px;}
+.right_top_left{ background-image:url(right_top_left.png); width:24px; height:27px;}
+.right_top_center{ background-image:url(right_top_center.png); background-repeat:repeat-x; text-align:left; padding-top:4px; padding-left:10px;}
+.right_top_right{ background-image:url(right_top_right.png); width:10px;}
+.right_middle{ width:100%; padding-right:2px;}
+
+.left_body{ background-image:url(left_bg_line.png); background-repeat:repeat-y;}
+.left_table{ width:207px; border:none;}
+.left_table_top{ background-image:url(left_top.png); width:207px; height:27px;}
+.left_item_img{ background-image:url(left_item.png);background-repeat:no-repeat; width:40px; height:27px; }
+.left_item_link{ text-align:left; line-height:27px;}
+.left_table_middle{width:150px; border:none; margin:0 auto;}
+
+/**-------表单元素的样式---------*/
+.input_text { border:1px solid #A6ADB7; height:20px; line-height:20px; color:#28456D;}
+.input_select { border:1px solid #A6ADB7; height:24px; line-height:24px; color:#28456D;}
+.input_textarea { border:1px solid #A6ADB7;color:#28456D;}
+.input_btn{border:none; width:61px; height:21px; background-image:url(btn_bg.png); background-repeat:no-repeat;}
+
+/**-------表格显示数据列表的样式--------*/
+.tableList{border:none; background-color:#B2C0CB;  width:100%;}
+.trListOdd{ height:22px; background-color:#FFFFFF;}
+.trListEven{ height:22px; background-color:#E7F0F9;}
+
+.top_exit_pass{ background-image:url(top_exit_pass.png); background-repeat:no-repeat; height:20px; width:145px; text-align:center;}
+.top_logo{ width:610px; height:99px; background-image:url(logo.png); background-repeat:no-repeat;}
+.top_right{ background-image:url(top_bg_line.png); background-repeat:repeat-x; vertical-align:top;}
+.top_right_table{ text-align:right;}
+
+.bottom1{height:7px; background-image:url(bottom_bg_line2.png); background-repeat:repeat-x; text-align:left;}
+.bottom5{ width:100%; border:none; background-image:url(bottom_bg_line1.png);}
+.bottom6{background-image:url(bottom_bg_line3.png);width:2px;height:25px; }
+.bottom7{background-image:url(bottom_bg_line4.png);width:2px;height:25px; }
+.bottom8{background-image:url(bottom_bg_line5.png);width:2px;height:25px; }
+
+.btn_paging_first{background-image:url(page_first.png); display:block; width:29px; height:20px;float: left; margin-right: 5px;}
+.btn_paging_first_over{background-image:url(page_first_over.png); display:block; width:29px; height:20px;}
+.btn_paging_prev{background-image:url(page_prev.png); display:block; width:29px; height:20px;float: left; margin-right: 5px;}
+.btn_paging_prev_over{background-image:url(page_prev_over.png); display:block; width:29px; height:20px;}
+.btn_paging_next{background-image:url(page_next.png); display:block; width:29px; height:20px;float: left; margin-right: 5px;}
+.btn_paging_next_over{background-image:url(page_next_over.png); display:block; width:29px; height:20px;}
+.btn_paging_last{background-image:url(page_last.png); display:block; width:29px; height:20px;float: left; margin-right: 5px;}
+.btn_paging_last_over{background-image:url(page_last_over.png); display:block; width:29px; height:20px;}
+
+.a_edit{background-image:url(edit.png); display:block; width:17px; height:17px;}
+.a_delete{background-image:url(delete.png); display:block; width:17px; height:17px;}
+
+/**-------错误提示的样式--------*/
+.error_tip{color: red;}
+

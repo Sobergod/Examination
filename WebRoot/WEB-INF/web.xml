@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<!-- actionServlet -->
+	<servlet>
+		<servlet-name>actionServlet</servlet-name>
+		<servlet-class>com.luas.tms.mvc.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>mvcPath</param-name>
+			<param-value>/WEB-INF/mvc-config.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>actionServlet</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 字符编码过滤器 -->
+	<filter>
+		<filter-name>charEncodingFilter</filter-name>
+		<filter-class>com.luas.tms.filter.CharEncodingFilter</filter-class>
+		<init-param>
+			<param-name>newEncoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>charEncodingFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+	
+	<!-- 安全验证过滤器 -->
+	<filter>
+		<filter-name>securityFilter</filter-name>
+		<filter-class>com.luas.tms.filter.SecurityFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>securityFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+	<!-- 安全验证过滤器 -->
+</web-app>
